@@ -1,7 +1,14 @@
 import Hero from "../components/Hero"
+import Products from "../components/Products"
 
 const HomeScreen = () => {
-  return  <Hero />
+  return (
+    <div>
+        <Hero />
+        <Products />
+    </div>
+  )
+
 }
 
 export default HomeScreen

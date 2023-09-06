@@ -4,6 +4,7 @@ function Products() {
     const[product, setProducts] = useState([])
     const { current: displayProduct } = useRef(['image', 'title', 'price'])
 
+    //TODO: need to stop infinite loop
     useEffect(() => {
         products()
     }, [displayProduct])
